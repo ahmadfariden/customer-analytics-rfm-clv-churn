@@ -203,22 +203,22 @@ Query SQL lengkap tersedia di [`sql/customer_analytics_pipeline.sql`](sql/custom
 Dashboard terdiri dari 4 halaman yang saling terhubung, membentuk alur cerita: **siapa pelanggan → seberapa berharga → kenapa mereka pergi → apa yang perlu dilakukan.**
 
 ### 1. Executive Overview
-![Executive Overview](screenshots/01_Executive_Overview.png)
+![Executive Overview](dashboard/01_Executive_Overview.png)
 
 Snapshot kondisi bisnis secara keseluruhan: total revenue (£8.91M), total pelanggan (4.338), rata-rata nilai order (£480.87), tren revenue bulanan, serta top negara dan produk berdasarkan kontribusi revenue.
 
 ### 2. RFM Segmentation
-![RFM Segmentation](screenshots/02_RFM_Segmentation.png)
+![RFM Segmentation](dashboard/02_RFM_Segmentation.png)
 
 Segmentasi 4.338 pelanggan ke dalam 9 kategori RFM. Menunjukkan distribusi pelanggan per segmen, kontribusi revenue tiap segmen, serta pemetaan posisi pelanggan berdasarkan Recency vs Frequency.
 
 ### 3. Customer Lifetime Value
-![Customer Lifetime Value](screenshots/03_Customer_Lifetime_Value.png)
+![Customer Lifetime Value](dashboard/03_Customer_Lifetime_Value.png)
 
 Distribusi Predicted CLV pelanggan (total £23.29 juta, rata-rata £5.37K), CLV per segmen, top 20 pelanggan bernilai tertinggi, dan sebaran CLV berdasarkan negara.
 
 ### 4. Churn Analysis & Recommendations
-![Churn Analysis & Recommendations](screenshots/04_Churn_Analysis_&_Recommendations.png)
+![Churn Analysis & Recommendations](dashboard/04_Churn_Analysis_and_Recommendations)
 
 Churn rate keseluruhan (33.40%), revenue at risk (£1.04 juta), churn rate per segmen, serta rekomendasi bisnis actionable untuk strategi retensi.
 
@@ -261,7 +261,7 @@ dashboard/
 ├── 01_Executive_Overview.png
 ├── 02_RFM_Segmentation.png
 ├── 03_Customer_Lifetime_Value.png
-└── 04_Churn_Analysis_&_Recommendations.png
+└── 04_Churn_Analysis_and_Recommendations.png
 docs/
 └── (documentation.md)
 scripts/
@@ -282,6 +282,8 @@ Unduh Online Retail Dataset dari [UCI Repository](https://archive.ics.uci.edu/da
 ```bash
 duckdb customer_analytics.duckdb
 ```
+**3. Buka file** `dashboard/customer_analytics_dashboard.pbix` menggunakan Power BI Desktop.
+
 Kemudian jalankan seluruh query pada [`sql/customer_analytics_pipeline.sql`](sql/customer_analytics_pipeline.sql) secara berurutan. Sesuaikan path file Excel pada bagian `read_xlsx(...)` dengan lokasi file di komputer Anda.
 
 Pipeline ini akan menghasilkan dua file CSV siap pakai:
