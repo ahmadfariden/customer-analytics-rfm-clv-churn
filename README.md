@@ -218,7 +218,7 @@ Segmentasi 4.338 pelanggan ke dalam 9 kategori RFM. Menunjukkan distribusi pelan
 Distribusi Predicted CLV pelanggan (total £23.29 juta, rata-rata £5.37K), CLV per segmen, top 20 pelanggan bernilai tertinggi, dan sebaran CLV berdasarkan negara.
 
 ### 4. Churn Analysis & Recommendations
-![Churn Analysis & Recommendations](dashboard/04_Churn_Analysis_and_Recommendations)
+![Churn Analysis & Recommendations](dashboard/04_Churn_Analysis_and_Recommendations.png)
 
 Churn rate keseluruhan (33.40%), revenue at risk (£1.04 juta), churn rate per segmen, serta rekomendasi bisnis actionable untuk strategi retensi.
 
