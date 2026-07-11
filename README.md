@@ -282,8 +282,6 @@ Unduh Online Retail Dataset dari [UCI Repository](https://archive.ics.uci.edu/da
 ```bash
 duckdb customer_analytics.duckdb
 ```
-**3. Buka file** `dashboard/customer_analytics_dashboard.pbix` menggunakan Power BI Desktop.
-
 Kemudian jalankan seluruh query pada [`sql/customer_analytics_pipeline.sql`](sql/customer_analytics_pipeline.sql) secara berurutan. Sesuaikan path file Excel pada bagian `read_xlsx(...)` dengan lokasi file di komputer Anda.
 
 Pipeline ini akan menghasilkan dua file CSV siap pakai:
